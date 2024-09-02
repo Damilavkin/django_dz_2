@@ -1,0 +1,16 @@
+{% extends 'menu.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+</head>
+<body>
+    <h1>Главная</h1>
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="{% url 'task1:games' %}">Магазин</a></li>
+        <li><a href="{% url 'task1:cart' %}">Корзина</a></li>
+    </ul>
+
+</body>
+</html>

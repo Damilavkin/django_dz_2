@@ -9,7 +9,7 @@ class BuyerAdmin(admin.ModelAdmin):
 
 
 class GameAdmin(admin.ModelAdmin):
-    list_display = ['title', 'cost', 'size', 'description', 'age_limited',]
+    list_display = ['title', 'cost', 'size', 'description', 'age_limited']
 
 
 admin.site.register(Buyer, BuyerAdmin)

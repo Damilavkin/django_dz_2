@@ -1,0 +1,16 @@
+{% extends 'menu.html' %}
+
+
+{% block pagename %}Игры{% endblock %}
+
+{% block content %}
+    <h1>Список Игр</h1>
+    <ul>
+        {% for game in games %}
+            <li>
+                {{ game.title }} | {{ game.description }}. Стоимость: {{ game.price }} ₽
+                <button type="button">Купить</button>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
